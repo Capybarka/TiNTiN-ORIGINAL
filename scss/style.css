@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
   font-family: "Playfair Display", serif;
@@ -5,7 +6,7 @@ html {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 144rem;
   padding: 0 8.5rem;
   margin: 0 auto;
 }
@@ -24,4 +25,20 @@ html {
   text-decoration: none;
   font-size: 3rem;
   color: #454545;
+}
+
+.header__image {
+  background: linear-gradient(rgba(79, 75, 75, 0.4), rgba(79, 75, 75, 0.4)), url("/images/главная/фон.jpg") center/cover no-repeat;
+  height: 90vh;
+  padding-top: 23.6rem;
+}
+
+.heading-1 {
+  font-size: 3rem;
+  line-height: 3.8rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  text-shadow: 10px 10px 10px #4F4B4B;
 }/*# sourceMappingURL=style.css.map */

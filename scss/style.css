@@ -1,7 +1,27 @@
 html {
   font-size: 62.5%;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
 }
 
-body {
-  padding: 20px;
+.container {
+  max-width: 1440px;
+  padding: 0 8.5rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  padding: 2.5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img {
+  display: block;
+  margin-right: 2rem;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #454545;
 }/*# sourceMappingURL=style.css.map */

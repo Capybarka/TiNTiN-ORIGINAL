@@ -1,0 +1,25 @@
+// появлени текста в шапке при загрузке страницы
+@keyframes header-anim {
+    from {
+        transform: translateY(-25rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+// увеличение карточек с выбором категории на главной странице
+@keyframes card-anim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}

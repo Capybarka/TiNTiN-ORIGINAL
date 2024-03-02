@@ -25,29 +25,6 @@ html {
   color: #4F4B4B;
 }
 
-.container {
-  max-width: 144rem;
-  padding: 0 8.5rem;
-  margin: 0 auto;
-}
-
-.logo {
-  display: flex;
-  padding: 2.5rem 0;
-  align-items: center;
-  justify-content: center;
-}
-.logo-img {
-  display: block;
-  margin-right: 2rem;
-}
-.logo a {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 0.2rem;
-  color: #454545;
-}
-
 .header__image {
   background: linear-gradient(rgba(79, 75, 75, 0.4), rgba(79, 75, 75, 0.4)), url("/images/главная/фон.jpg") center/cover no-repeat;
   min-height: 90vh;
@@ -188,4 +165,37 @@ html {
 .footer__list {
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  padding: 2.5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img {
+  display: block;
+  margin-right: 2rem;
+}
+.logo a {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  color: #454545;
+}
+
+.logo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__wrapper .header__link {
+  font-size: 1.8rem;
+  color: #4F4B4B;
+}
+
+.container {
+  max-width: 144rem;
+  padding: 0 8.5rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

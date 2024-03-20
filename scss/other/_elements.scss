@@ -1,3 +1,10 @@
+// контейнер для всех элементов
+.container {
+    max-width: 144rem;
+    padding: 0 8.5rem;
+    margin: 0 auto;
+}
+
 //шапка без ссылки "на главную"
 .logo {
     display: flex;
@@ -30,9 +37,39 @@
     }
 }
 
-// контейнер для всех элементов
-.container {
-    max-width: 144rem;
-    padding: 0 8.5rem;
-    margin: 0 auto;
+// карточки с категориями одежды на страницах female и male
+.selection__box_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        position: relative;
+        padding-top: calc(100% / 1);
+        background: url("../../images/категории женское/брюки.jpg") center/cover no-repeat;
+    }
+}
+
+// ссылки перед этими карточками
+.section_selectionCategory {
+    padding: 2rem 8rem 11rem;
+
+    .selectionCategory_links {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        a:first-child {
+            color: $color-text-light;
+            font-size: 2.5rem;
+        }
+
+        a:last-child {
+            display: inline-block;
+            margin-top: 1rem;
+            color: $color-red;
+            font-size: 3rem;
+        }
+    }
 }

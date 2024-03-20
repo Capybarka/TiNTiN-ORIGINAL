@@ -1,9 +1,5 @@
 @import "../other/animation";
-
-$color-logo: #454545;
-$color-text: #4F4B4B;
-$color-text-light: #999999;
-$line: #cfcfcf;
+@import "../other/variable";
 
 html {
     // 1rem = 10px

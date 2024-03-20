@@ -169,6 +169,19 @@ html {
   justify-content: space-between;
 }
 
+.selection__box_wrapper .box_wrapper-pants {
+  background: url("../../images/категории женское/брюки.jpg") center/cover no-repeat;
+}
+.selection__box_wrapper .box_wrapper-tshirts {
+  background: url("../../images/категории женское/футболки.jpg") center/cover no-repeat;
+}
+.selection__box_wrapper .box_wrapper-sweatshirt {
+  background: url("../../images/категории женское/толстовки.jpg") center/cover no-repeat;
+}
+.selection__box_wrapper .box_wrapper-shoes {
+  background: url("../../images/категории женское/обувь.jpg") center/cover no-repeat;
+}
+
 .container {
   max-width: 144rem;
   padding: 0 8.5rem;
@@ -204,15 +217,23 @@ html {
 
 .selection__box_wrapper {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
   justify-content: center;
-  align-items: center;
 }
-.selection__box_wrapper div {
+.selection__box_wrapper a {
+  display: block;
+  padding-top: 115%;
+  border-radius: 1rem;
   position: relative;
-  padding-top: 100%;
-  background: url("../../images/категории женское/брюки.jpg") center/cover no-repeat;
+}
+.selection__box_wrapper a p {
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: -70%;
+  text-shadow: 0.2rem 0.2rem 2rem black, -0.2rem -0.2rem 2rem black, 0rem 0rem 2rem black;
 }
 
 .section_selectionCategory {

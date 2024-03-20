@@ -40,15 +40,27 @@
 // карточки с категориями одежды на страницах female и male
 .selection__box_wrapper {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
     justify-content: center;
-    align-items: center;
 
-    div {
+    a {
+        display: block;
+        padding-top: calc(115% / 1); /////////////////////////////////////////////
+        border-radius: 1rem;
         position: relative;
-        padding-top: calc(100% / 1);
-        background: url("../../images/категории женское/брюки.jpg") center/cover no-repeat;
+
+    }
+
+    a p {
+        color: white;
+        font-size: 4.5rem;
+        text-align: center;
+        margin-top: -70%;
+        text-shadow: .2rem .2rem 2rem black,
+            -.2rem -.2rem 2rem black,
+            0rem 0rem 2rem black;
     }
 }
 
@@ -73,3 +85,5 @@
         }
     }
 }
+
+// текст внутри карточек с категориями одежды на страницах female и male

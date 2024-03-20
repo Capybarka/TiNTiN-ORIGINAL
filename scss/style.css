@@ -137,38 +137,6 @@ html {
   max-width: 3rem !important;
 }
 
-.footer {
-  border-top: 1px solid #cfcfcf;
-  padding: 7rem 0 7rem 0;
-}
-.footer_item {
-  margin-bottom: 3rem;
-  font-size: 1.8rem;
-  color: #999999;
-}
-
-.item_social-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 3rem;
-}
-.item_social-list a {
-  color: #4F4B4B;
-  font-size: 1.4rem;
-}
-.item_social-list a:hover {
-  color: #999999;
-  text-decoration: underline;
-}
-
-.footer__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .selection__box_wrapper .box_wrapper-pants {
   background: url("../../images/категории женское/брюки.jpg") center/cover no-repeat;
 }
@@ -183,7 +151,7 @@ html {
 }
 
 .container {
-  max-width: 144rem;
+  max-width: 130rem;
   padding: 0 8.5rem;
   margin: 0 auto;
 }
@@ -219,7 +187,7 @@ html {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 2rem;
+  gap: 4rem;
   justify-content: center;
 }
 .selection__box_wrapper a {
@@ -227,10 +195,15 @@ html {
   padding-top: 115%;
   border-radius: 1rem;
   position: relative;
+  transition: all 0.5s;
+  box-shadow: 0.2rem 0.2rem 3rem rgb(141, 136, 136), -0.2rem -0.2rem 3rem rgb(141, 136, 136);
+}
+.selection__box_wrapper a:hover {
+  transform: scale(1.05);
 }
 .selection__box_wrapper a p {
   color: white;
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   text-align: center;
   margin-top: -70%;
   text-shadow: 0.2rem 0.2rem 2rem black, -0.2rem -0.2rem 2rem black, 0rem 0rem 2rem black;
@@ -252,4 +225,43 @@ html {
   margin-top: 1rem;
   color: rgb(221, 10, 10);
   font-size: 3rem;
+}
+
+.section_topItems {
+  padding: 5rem;
+  background-color: #999999;
+}
+
+.footer {
+  padding: 7rem 0 5rem 0;
+  border-top: 1px solid rgb(213, 205, 205);
+}
+.footer .footer_nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  color: #999999;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .footer_nav .footer_nav_item {
+  margin-bottom: 3rem;
+}
+.footer .footer_nav .footer_nav_item span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.footer .footer_nav .footer_nav_item li {
+  margin-bottom: 1rem;
+}
+.footer .footer_nav .footer_nav_item li:hover {
+  text-shadow: 0.5rem 0.5rem 1rem #999999;
+}
+.footer .footer_nav ul {
+  color: #4F4B4B;
+  font-size: 1.6rem;
+}
+.footer .footer_nav a {
+  transition: 0.3s;
+  color: #4F4B4B;
 }/*# sourceMappingURL=style.css.map */

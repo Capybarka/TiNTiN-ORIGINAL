@@ -184,39 +184,3 @@ html {
         }
     }
 }
-
-//footer
-.footer {
-    border-top: 1px solid $line;
-    padding: 7rem 0 7rem 0;
-
-    &_item {
-        margin-bottom: 3rem;
-        font-size: 1.8rem;
-        color: $color-text-light;
-    }
-}
-
-.item_social-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 3rem;
-
-    a {
-        color: $color-text;
-        font-size: 1.4rem;
-
-        &:hover {
-            color: $color-text-light;
-            text-decoration: underline;
-        }
-    }
-}
-
-.footer__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}

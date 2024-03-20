@@ -162,10 +162,6 @@ html {
   background-color: rgb(244, 243, 243);
 }
 
-.border-top {
-  border-top: 0.1rem solid rgb(213, 205, 205);
-}
-
 .heading-1 {
   max-width: 100rem;
   margin: 0 auto;
@@ -362,12 +358,13 @@ html {
 }
 
 .description__container {
-  padding: 4rem 0;
+  padding: 7rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .description__container img {
-  max-width: 35%;
+  max-width: 40%;
   height: auto;
   border-radius: 2rem;
   margin-right: 15rem;
@@ -386,6 +383,15 @@ html {
   font-size: 1.8rem;
   line-height: 2;
 }
-.description__container .description_wrapper {
-  padding-top: 2rem;
+.description__container .description-stock-list {
+  font-size: 1.8rem;
+}
+.description__container .description-stock-list span {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.description__container .description-stock-list li {
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

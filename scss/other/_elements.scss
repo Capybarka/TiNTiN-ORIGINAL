@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.main {
+    border-top: .1rem solid rgb(213, 205, 205);
+}
+
 //шапка без ссылки "на главную"
 .logo {
     display: flex;
@@ -34,6 +38,11 @@
     .header__link {
         font-size: 1.8rem;
         color: $color-text;
+        transition: .3s;
+
+        &:hover {
+            text-shadow: .3rem .3rem 1rem $color-text-light;
+        }
     }
 }
 
@@ -102,7 +111,7 @@
 // footer
 .footer {
     padding: 7rem 0 5rem 0;
-    border-top: 1px solid rgb(213, 205, 205);
+    border-top: .1rem solid rgb(213, 205, 205);
 
     .footer_nav {
         display: flex;

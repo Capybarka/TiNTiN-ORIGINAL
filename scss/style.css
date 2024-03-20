@@ -137,23 +137,40 @@ html {
   max-width: 3rem !important;
 }
 
-.selection__box_wrapper .box_wrapper-pants {
+.category_female .box_wrapper-pants {
   background: url("../../images/категории женское/брюки.jpg") center/cover no-repeat;
 }
-.selection__box_wrapper .box_wrapper-tshirts {
+.category_female .box_wrapper-tshirts {
   background: url("../../images/категории женское/футболки.jpg") center/cover no-repeat;
 }
-.selection__box_wrapper .box_wrapper-sweatshirt {
+.category_female .box_wrapper-sweatshirt {
   background: url("../../images/категории женское/толстовки.jpg") center/cover no-repeat;
 }
-.selection__box_wrapper .box_wrapper-shoes {
+.category_female .box_wrapper-shoes {
   background: url("../../images/категории женское/обувь.jpg") center/cover no-repeat;
+}
+
+.category_male .box_wrapper-pants {
+  background: url("../../images/категории мужское/брюки.jpg") center/cover no-repeat;
+}
+.category_male .box_wrapper-tshirts {
+  background: url("../../images/категории мужское/футболки.jpg") center/cover no-repeat;
+}
+.category_male .box_wrapper-sweatshirt {
+  background: url("../../images/категории мужское/толстовки.jpg") center/cover no-repeat;
+}
+.category_male .box_wrapper-shoes {
+  background: url("../../images/категории мужское/обувь.jpg") center/cover no-repeat;
 }
 
 .container {
   max-width: 130rem;
   padding: 0 8.5rem;
   margin: 0 auto;
+}
+
+.main {
+  border-top: 0.1rem solid rgb(213, 205, 205);
 }
 
 .logo {
@@ -181,6 +198,10 @@ html {
 .logo__wrapper .header__link {
   font-size: 1.8rem;
   color: #4F4B4B;
+  transition: 0.3s;
+}
+.logo__wrapper .header__link:hover {
+  text-shadow: 0.3rem 0.3rem 1rem #999999;
 }
 
 .selection__box_wrapper {
@@ -234,7 +255,7 @@ html {
 
 .footer {
   padding: 7rem 0 5rem 0;
-  border-top: 1px solid rgb(213, 205, 205);
+  border-top: 0.1rem solid rgb(213, 205, 205);
 }
 .footer .footer_nav {
   display: flex;

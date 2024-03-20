@@ -217,6 +217,7 @@ html {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(4, minmax(10.5rem, 1fr));
+    grid-template-rows: minmax(50px, 1fr);
     row-gap: 4.5rem;
     column-gap: 3rem;
 
@@ -227,6 +228,11 @@ html {
             width: 100%;
             margin-bottom: 1rem;
             border-radius: 1rem;
+            transition: all .4s;
+
+            &:hover {
+                transform: scale(1.03);
+            }
         }
 
         .item-title,

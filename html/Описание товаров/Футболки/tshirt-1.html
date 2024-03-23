@@ -35,9 +35,9 @@
     <main class="background-gray">
         <div class="container">
             <section class="description__container">
-                <img src="/images/главная/мужское.jpg" alt="футболка">
+                <img src="/images/категории мужское/футболки.jpg" alt="футболка">
                 <div class="description_wrapper">
-                    <p class="description-title">Футболка с ярким принтом</p>
+                    <p class="description-title">Футболка с принтом</p>
                     <p class="description-price">3000 руб</p>
                     <p class="description-modelInfo">Модель: рост 181 см, размер L</p>
                     <p class="description-text">Эта стильная футболка станет отличным дополнением к вашему гардеробу!
@@ -54,8 +54,33 @@
                         <li>Адрес 2</li>
                         <li>Адрес 3</li>
                     </ul>
+
+                    <button type="button" class="reservation-btn">Забронировать</button>
                 </div>
             </section>
+
+
+            <section class="reservation_conatiner">
+                <form class="reservation_form" action="#" method="get">
+                    <p class="reservation_form-title">Заполните анкету</p>
+                    <input type="text" name="reservation_name" id="reservation_name" placeholder="Ваше имя">
+                    <input type="tel" id="reservation_tel" placeholder="Номер телефона">
+                    <input type="email" name="" id="reservation_email" placeholder="Электронная почта">
+                    <button class="reservation_form-btn" type="submit">Готово</button>
+                </form><br>
+            </section>
+
+            <script>
+                "use strict";
+
+                const reservationBtn = document.querySelector(".reservation-btn");
+                const reservationForm = document.querySelector(".reservation_conatiner")
+
+                reservationBtn.addEventListener('click', function (event) {
+                    reservationForm.classList.toggle("hidden")
+                })
+            </script>
+
         </div>
     </main>
 

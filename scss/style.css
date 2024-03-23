@@ -162,6 +162,30 @@ html {
   background-color: rgb(244, 243, 243);
 }
 
+.hidden {
+  display: none;
+}
+
+.reservation-btn {
+  display: block;
+  max-width: 35%;
+  padding: 1.5rem 2rem;
+  border-radius: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  background: rgb(25, 10, 62);
+  background: rgb(60, 3, 75);
+  background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
+  transition: transform 0.6s;
+}
+.reservation-btn:hover {
+  transform: scale(1.03);
+}
+
 .heading-1 {
   max-width: 100rem;
   margin: 0 auto;
@@ -364,7 +388,7 @@ html {
   align-items: center;
 }
 .description__container img {
-  max-width: 40%;
+  max-width: 35%;
   height: auto;
   border-radius: 2rem;
   margin-right: 15rem;
@@ -385,6 +409,7 @@ html {
 }
 .description__container .description-stock-list {
   font-size: 1.8rem;
+  margin-bottom: 2.5rem;
 }
 .description__container .description-stock-list span {
   display: block;
@@ -394,4 +419,51 @@ html {
 .description__container .description-stock-list li {
   padding-left: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.reservation_form {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2.5rem;
+  box-shadow: 0.2rem 0.2rem 3rem rgba(79, 75, 75, 0.2);
+}
+.reservation_form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.reservation_conatiner input {
+  display: block;
+  width: 40%;
+  outline: none;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  background-color: rgb(223, 225, 225);
+  border: none;
+}
+.reservation_conatiner input:hover {
+  outline: none;
+}
+
+.reservation_form-btn {
+  display: block;
+  margin: 3rem auto 0 auto;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.3rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  background-color: rgb(62, 55, 55);
+  transition: box-shadow 0.5s;
+}
+.reservation_form-btn:hover {
+  box-shadow: 0.2rem 0.2rem 2rem black;
 }/*# sourceMappingURL=style.css.map */

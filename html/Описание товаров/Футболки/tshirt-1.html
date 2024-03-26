@@ -42,7 +42,7 @@
                     <p class="description-modelInfo">Модель: рост 181 см, размер L</p>
                     <p class="description-text">Эта стильная футболка станет отличным дополнением к вашему гардеробу!
                         Изготовлена из высококачественного материала
-                        темно-серого цвета, она приятна на ощупь и удобна в носке. Яркий красный принт на груди
+                        белого цвета, она приятна на ощупь и удобна в носке. Принт на груди
                         добавляет изюминку этой модели,
                         делая ее ярким акцентом вашего образа. Эта футболка точно привлечет внимание и подчеркнет вашу
                         индивидуальность!
@@ -59,7 +59,6 @@
                 </div>
             </section>
 
-
             <section class="reservation_container hidden">
                 <form class="reservation_form" action="#" method="get">
                     <p class="reservation_form-title">Заполните анкету</p>
@@ -68,64 +67,17 @@
                             required>
                         <input type="tel" id="reservation_tel" placeholder="Номер телефона" required>
                         <input type="email" name="" id="reservation_email" placeholder="Электронная почта" required>
-                        <button class="reservation_form-btn" type="submit">Готово</button>
+                        <button class="reservation_form-btn">Готово</button>
                     </div>
-                </form><br>
+                </form><br><br>
             </section>
 
             <section class="reservation_message hidden">
                 <p>Товар забронирован</p>
                 <p>Бронь будет действовать до <span class="reservation_message_date"></span> включительно</p>
-            </section><br>
+            </section><br><br>
 
-            <script>
-                "use strict";
-
-                const reservationBtn = document.querySelector(".reservation-btn");
-                const reservationForm = document.querySelector(".reservation_container")
-                const inputContainer = document.querySelector(".input-container");
-                const reservationDateElement = document.querySelector(".reservation_message_date")
-                const messageContainer = document.querySelector(".reservation_message")
-
-                reservationBtn.addEventListener('click', function (event) {
-                    reservationForm.classList.toggle("hidden");
-                })
-
-                // const userDate = document.querySelectorAll(".input-container input")
-
-                // // проверка на заполнение данных
-                // let flag = false;
-                // for (let i = 0; i < userDate.length; i++) {
-                //     if (userDate[i].value == "") {
-                //         flag == true;
-                //         break;
-                //     }
-                // }
-
-                // if (flag) {
-                const btnReady = document.querySelector(".reservation_form-btn");
-
-                btnReady.addEventListener('click', function (event) {
-                    reservationForm.classList.toggle("hidden");
-                    messageContainer.classList.toggle("hidden");
-
-                    let date = new Date();
-                    date.setDate(date.getDate() + 3)
-
-                    let day = date.getDate();
-                    let month = date.getMonth() + 1;
-                    let year = date.getFullYear()
-
-                    if (month < 10) month = "0" + month
-
-                    reservationDateElement.textContent = day + "-" + month + "-" + year
-                })
-                // }
-                // else {
-                //     alert("dfdfd")
-                // }
-            </script>
-
+            <script src="../../../Скрипты/Reservation.js"></script>
         </div>
     </main>
 

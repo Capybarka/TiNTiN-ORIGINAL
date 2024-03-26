@@ -15,34 +15,18 @@ html {
 }
 
 .background-gray {
-    background-color: rgb(244, 243, 243);
+    background-color: rgb(234, 231, 231);
+}
+
+.background-gray-dark {
+    background-color: rgb(106, 103, 103);
 }
 
 .hidden {
     display: none;
 }
 
-// кнопка "забронировать товар" на странице каталога
-.reservation-btn {
-    display: block;
-    max-width: 35%;
-    padding: 1.5rem 2rem;
-    border-radius: 2.5rem;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.2rem;
-    letter-spacing: .2rem;
-    font-weight: 600;
-    background: rgba(25, 10, 62, 1);
-    background: rgba(60, 3, 75, 1);
-    background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
-    transition: transform .6s;
 
-    &:hover {
-        transform: scale(1.03);
-    }
-}
 
 .heading-1 {
     max-width: 100rem;
@@ -161,6 +145,26 @@ html {
 .section_topItems {
     padding: 5rem;
     background-color: $color-text-light;
+    font-weight: 600;
+
+    .heading-3 {
+        margin-bottom: 4rem;
+    }
+
+    .card {
+        padding: 2rem;
+        background-color: #f1eeee;
+        border-radius: 2rem;
+        transition: transform .6s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        a img:hover {
+            transform: none;
+        }
+    }
 }
 
 
@@ -205,7 +209,9 @@ html {
     }
 }
 
-// каталог 
+
+
+// СТРАНИЦА КАТАЛОГА---------------------------------------------
 .section_catalog {
     padding: 4rem 0;
 
@@ -238,44 +244,67 @@ html {
     }
 }
 
+
+// карточки товара
 .catalog_container {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(4, minmax(10.5rem, 1fr));
-    grid-template-rows: minmax(50px, 1fr);
+    // grid-template-rows: minmax(50px, 1fr);
     row-gap: 4.5rem;
     column-gap: 3rem;
+}
 
-    .card {
-        font-size: 1.6rem;
+.catalog_container .card {
+    font-size: 1.6rem;
+    margin-bottom: 3.5rem;
 
-        img {
-            width: 100%;
-            margin-bottom: 1rem;
-            border-radius: 1rem;
-            box-shadow: .2rem .2rem 3rem rgb(147, 144, 144);
-            transition: all .4s;
+    img {
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: .2rem .2rem 3rem rgb(147, 144, 144);
+        transition: all .4s;
 
-            &:hover {
-                transform: scale(1.03);
-            }
+        &:hover {
+            transform: scale(1.03);
         }
+    }
 
-        .item-title,
-        .item-price,
-        .item-sizes {
-            margin-bottom: .6rem;
-            text-align: center;
-            color: $color-text;
-        }
+    .item-title,
+    .item-price,
+    .item-sizes {
+        margin-bottom: .6rem;
+        text-align: center;
+        color: $color-text;
+    }
 
-        .item-price {
-            color: black;
-            font-weight: 700;
-        }
+    .item-price {
+        color: black;
+        font-weight: 700;
+    }
 
-        .item-sizes {
-            color: $color-text-light;
+    .item-sizes {
+        color: $color-text-light;
+        margin-bottom: 1rem;
+    }
+
+    .item-btn {
+        display: block;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 80%;
+        background-color: $color-text;
+        color: #fff;
+        border-radius: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        transition: .55s;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        &:hover {
+            background-color: #2d2d2d;
         }
     }
 }
@@ -330,8 +359,29 @@ html {
     }
 }
 
-// форма бронирования товара
+// кнопка "забронировать товар" на странице каталога
+.reservation-btn {
+    display: block;
+    max-width: 35%;
+    padding: 1.5rem 2rem;
+    border-radius: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    background: rgba(25, 10, 62, 1);
+    background: rgba(60, 3, 75, 1);
+    background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
+    transition: transform .6s;
 
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+// форма бронирования товара
 .reservation_form {
     max-width: 70%;
     margin: 0 auto;
@@ -339,7 +389,7 @@ html {
     margin-bottom: 2rem;
     background-color: rgb(255, 255, 255);
     border-radius: 2.5rem;
-    box-shadow: .2rem .2rem 3rem rgba($color-text, .2);
+    box-shadow: .5rem .5rem 3rem rgba(32, 6, 38, .5);
 
     &-title {
         text-align: center;
@@ -376,8 +426,10 @@ html {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: .3rem;
-    background-color: rgb(62, 55, 55);
     transition: box-shadow .5s;
+    background: rgba(25, 10, 62, 1);
+    background: rgba(60, 3, 75, 1);
+    background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
 
     &:hover {
         box-shadow: .2rem .2rem 2rem black;
@@ -390,6 +442,7 @@ html {
     margin: 0 auto;
     border-radius: 3rem;
     background-color: #fff;
+    box-shadow: .2rem .2rem 3rem rgb(147, 144, 144);
 
     p {
         font-size: 2rem;
@@ -397,7 +450,7 @@ html {
         color: black;
         letter-spacing: .3rem;
 
-        &:first-child{
+        &:first-child {
             margin-bottom: 2rem;
         }
     }

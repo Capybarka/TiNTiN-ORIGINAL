@@ -20,8 +20,8 @@
 }
 .header__image {
   background: linear-gradient(rgba(79, 75, 75, 0.4), rgba(79, 75, 75, 0.4)), url("/images/главная/фон.jpg") center/cover no-repeat;
-  min-height: 90vh;
-  padding-top: 23.6rem;
+  min-height: 80vh;
+  padding-top: 12rem;
   box-shadow: 0 0.7rem 3.5rem #4F4B4B;
 }
 
@@ -482,7 +482,7 @@ html {
 
 .reservation_container input {
   display: block;
-  width: 40%;
+  width: 60%;
   outline: none;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -490,6 +490,7 @@ html {
   border-radius: 3rem;
   background-color: rgb(223, 225, 225);
   border: none;
+  font-size: 1.4rem;
 }
 .reservation_container input:hover {
   outline: none;
@@ -509,6 +510,7 @@ html {
   background: rgb(25, 10, 62);
   background: rgb(60, 3, 75);
   background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
+  font-size: 1.4rem;
 }
 .reservation_form-btn:hover {
   box-shadow: 0.2rem 0.2rem 2rem black;
@@ -530,4 +532,105 @@ html {
 }
 .reservation_message p:first-child {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 1050px) {
+  .selection__box_wrapper {
+    grid-template-columns: repeat(2, minmax(20rem, 30%));
+  }
+}
+@media (max-width: 850px) {
+  .clients__box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(10rem, 28rem));
+    gap: 5rem;
+  }
+  .section_topItems .catalog_container {
+    grid-template-columns: repeat(2, 45%);
+    place-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .catalog_container {
+    grid-template-columns: repeat(3, minmax(10.5rem, 1fr));
+  }
+  .description__container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .description__container img {
+    max-width: 45%;
+    margin-bottom: 2.5rem;
+    margin-right: 0;
+  }
+  .description__container .reservation-btn {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 740px) {
+  .footer_nav {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .header__link {
+    display: none;
+  }
+  .logo__wrapper {
+    justify-content: center;
+  }
+  .section_topItems .catalog_container {
+    grid-template-columns: 60%;
+  }
+  .catalog_container {
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+  }
+  .reservation_form input {
+    width: 95%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+  .header__image {
+    min-height: 45vh;
+  }
+  .selection__box_wrapper {
+    grid-template-columns: 50%;
+  }
+}
+@media (max-width: 350px) {
+  .clients__box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 60%;
+    gap: 5rem;
+  }
+  .catalog_container {
+    grid-template-columns: 55%;
+    justify-content: center;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 20%;
+  }
+  .header__image {
+    min-height: 20vh;
+  }
 }/*# sourceMappingURL=style.css.map */

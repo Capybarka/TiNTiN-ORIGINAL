@@ -250,7 +250,6 @@ html {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(4, minmax(10.5rem, 1fr));
-    // grid-template-rows: minmax(50px, 1fr);
     row-gap: 4.5rem;
     column-gap: 3rem;
 }
@@ -402,7 +401,7 @@ html {
 .reservation_container {
     input {
         display: block;
-        width: 40%;
+        width: 60%;
         outline: none;
         margin: 0 auto;
         margin-bottom: 2rem;
@@ -410,6 +409,7 @@ html {
         border-radius: 3rem;
         background-color: rgb(223, 225, 225);
         border: none;
+        font-size: 1.4rem;
 
         &:hover {
             outline: none;
@@ -431,6 +431,7 @@ html {
     background: rgba(25, 10, 62, 1);
     background: rgba(60, 3, 75, 1);
     background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
+    font-size: 1.4rem;
 
     &:hover {
         box-shadow: .2rem .2rem 2rem black;

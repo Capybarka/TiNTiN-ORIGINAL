@@ -14,6 +14,7 @@
 
 //main
 
+
 //section selection
 .selection {
     padding: 7rem 0;
@@ -24,6 +25,7 @@
         font-size: 2.5rem;
         margin: 0 auto 6.5rem auto;
         line-height: 3.7rem;
+        color: $color-text-white;
     }
 
     &__box {
@@ -50,20 +52,20 @@
         .btn {
             display: block;
             padding: 1rem 4rem;
-            background-color: $color-logo;
+            background-color: #fff;
             font-size: 2rem;
-            color: #fff;
+            color: $color-text;
             text-align: center;
             border-radius: 3rem;
             text-transform: uppercase;
-            text-shadow: .5rem .5rem .5rem #000;
             font-weight: 700;
 
-            transition: .5s;
+            transition: all .5s;
 
             &:hover {
-                background-color: #000;
                 transform: translateY(.6rem);
+                box-shadow: .5rem .5rem 1.5rem #000,
+                -.5rem -.5rem 1.5rem #000;
             }
         }
     }

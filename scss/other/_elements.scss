@@ -14,8 +14,8 @@ html {
     margin: 0 auto;
 }
 
-.background-gray {
-    background-color: rgb(245, 242, 242);
+.background-black {
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .background-gray-dark {
@@ -214,6 +214,7 @@ html {
 // СТРАНИЦА КАТАЛОГА---------------------------------------------
 .section_catalog {
     padding: 4rem 0;
+    color: $color-text-white;
 
     .category_description {
         margin-bottom: 4rem;
@@ -262,7 +263,7 @@ html {
         width: 100%;
         margin-bottom: 1rem;
         border-radius: 1rem;
-        box-shadow: .2rem .2rem 3rem rgb(147, 144, 144);
+        // box-shadow: .2rem .2rem 3rem rgb(147, 144, 144);
         transition: all .4s;
 
         &:hover {
@@ -275,16 +276,16 @@ html {
     .item-sizes {
         margin-bottom: .6rem;
         text-align: center;
-        color: $color-text;
+        color: $color-text-white;
     }
 
     .item-price {
-        color: black;
-        font-weight: 700;
+        font-weight: 900;
+        color: $color-text-white;
     }
 
     .item-sizes {
-        color: $color-text-light;
+        color: $color-text-white;
         margin-bottom: 1rem;
     }
 
@@ -293,17 +294,20 @@ html {
         margin: 0 auto;
         padding: 1rem;
         width: 80%;
-        background-color: $color-text;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         border-radius: 2rem;
         text-align: center;
         text-transform: uppercase;
+        letter-spacing: .1rem;
         transition: .55s;
         font-size: 1.4rem;
         font-weight: 600;
 
         &:hover {
-            background-color: #2d2d2d;
+            transform: translateY(.5rem);
+            box-shadow: .5rem .5rem 1.5rem #000,
+                -.5rem -.5rem 1.5rem #000;
         }
     }
 }

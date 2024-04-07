@@ -34,6 +34,7 @@
   font-size: 2.5rem;
   margin: 0 auto 6.5rem auto;
   line-height: 3.7rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 .selection__box {
   width: 75%;
@@ -57,19 +58,18 @@
 .selection__card .btn {
   display: block;
   padding: 1rem 4rem;
-  background-color: #454545;
+  background-color: #fff;
   font-size: 2rem;
-  color: #fff;
+  color: #4F4B4B;
   text-align: center;
   border-radius: 3rem;
   text-transform: uppercase;
-  text-shadow: 0.5rem 0.5rem 0.5rem #000;
   font-weight: 700;
-  transition: 0.5s;
+  transition: all 0.5s;
 }
 .selection__card .btn:hover {
-  background-color: #000;
   transform: translateY(0.6rem);
+  box-shadow: 0.5rem 0.5rem 1.5rem #000, -0.5rem -0.5rem 1.5rem #000;
 }
 
 .clients {
@@ -163,8 +163,8 @@ html {
   margin: 0 auto;
 }
 
-.background-gray {
-  background-color: rgb(245, 242, 242);
+.background-black {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .background-gray-dark {
@@ -324,6 +324,7 @@ html {
 
 .section_catalog {
   padding: 4rem 0;
+  color: rgba(255, 255, 255, 0.7);
 }
 .section_catalog .category_description {
   margin-bottom: 4rem;
@@ -366,7 +367,6 @@ html {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 1rem;
-  box-shadow: 0.2rem 0.2rem 3rem rgb(147, 144, 144);
   transition: all 0.4s;
 }
 .catalog_container .card img:hover {
@@ -377,14 +377,14 @@ html {
 .catalog_container .card .item-sizes {
   margin-bottom: 0.6rem;
   text-align: center;
-  color: #4F4B4B;
+  color: rgba(255, 255, 255, 0.7);
 }
 .catalog_container .card .item-price {
-  color: black;
-  font-weight: 700;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.7);
 }
 .catalog_container .card .item-sizes {
-  color: #999999;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 1rem;
 }
 .catalog_container .card .item-btn {
@@ -392,17 +392,19 @@ html {
   margin: 0 auto;
   padding: 1rem;
   width: 80%;
-  background-color: #4F4B4B;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border-radius: 2rem;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
   transition: 0.55s;
   font-size: 1.4rem;
   font-weight: 600;
 }
 .catalog_container .card .item-btn:hover {
-  background-color: #2d2d2d;
+  transform: translateY(0.5rem);
+  box-shadow: 0.5rem 0.5rem 1.5rem #000, -0.5rem -0.5rem 1.5rem #000;
 }
 
 .description__container {

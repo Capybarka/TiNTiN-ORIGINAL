@@ -14,6 +14,27 @@
 
 //main
 
+// @keyframes textMoveAnim {
+//     0% {
+//         transform: translateY(.3rem);
+//     }
+
+//     25% {
+//         transform: translateY(.2rem);
+//     }
+
+//     50% {
+//         transform: translateY(0);
+//     }
+
+//     75% {
+//         transform: translateY(-.2rem);
+//     }
+
+//     100% {
+//         transform: translateY(-.3rem)
+//     }
+// }
 
 //section selection
 .selection {
@@ -25,7 +46,11 @@
         font-size: 2.5rem;
         margin: 0 auto 6.5rem auto;
         line-height: 3.7rem;
+        font-weight: 500;
         color: $color-text-white;
+        text-shadow: .2rem .2rem 5rem rgba(212, 202, 202, 0.9);
+        // animation: textMoveAnim 4s ease-out infinite;
+        // transition: 3s;
     }
 
     &__box {
@@ -65,7 +90,7 @@
             &:hover {
                 transform: translateY(.6rem);
                 box-shadow: .5rem .5rem 1.5rem #000,
-                -.5rem -.5rem 1.5rem #000;
+                    -.5rem -.5rem 1.5rem #000;
             }
         }
     }

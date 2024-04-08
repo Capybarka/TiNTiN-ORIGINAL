@@ -15,7 +15,7 @@ html {
 }
 
 .background-black {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .85);
 }
 
 
@@ -115,7 +115,7 @@ html {
 
 // ссылки перед этими карточками
 .section_selectionCategory {
-    padding: 5rem 8rem 11rem;
+    padding: 5rem 8rem 8rem;
 
     .selectionCategory_links {
         text-align: center;
@@ -124,11 +124,17 @@ html {
         a:first-child {
             color: $color-text-light;
             font-size: 2.5rem;
+            transition: all .5s;
+
+            &:hover {
+                color: #d1cbcb;
+            }
         }
 
         a:last-child {
             display: inline-block;
             margin-top: 1rem;
+            margin-bottom: 3rem;
             color: #fff;
             font-size: 3rem;
         }
@@ -323,6 +329,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $color-text-white;
 
     img {
         max-width: 35%;
@@ -371,15 +378,13 @@ html {
     max-width: 35%;
     padding: 1.5rem 2rem;
     border-radius: 2.5rem;
-    color: white;
+    color: #000;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: .2rem;
     font-weight: 600;
-    background: rgba(25, 10, 62, 1);
-    background: rgba(60, 3, 75, 1);
-    background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
+    background-color: #fff;
     transition: transform .6s;
 
     &:hover {
@@ -434,13 +439,12 @@ html {
     font-weight: 600;
     letter-spacing: .3rem;
     transition: box-shadow .5s;
-    background: rgba(25, 10, 62, 1);
-    background: rgba(60, 3, 75, 1);
-    background: linear-gradient(0deg, rgba(25, 10, 62, 0.9) 0%, rgba(60, 3, 75, 0.9) 100%);
-    font-size: 1.4rem;
+    background-color: #000;
+    transition: .5s;
 
     &:hover {
-        box-shadow: .2rem .2rem 2rem black;
+        // box-shadow: .2rem .2rem 2rem black;
+        transform: translateY(.2rem);
     }
 }
 

@@ -15,17 +15,13 @@ html {
 }
 
 .background-black {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .9);
 }
 
-.background-gray-dark {
-    background-color: rgb(106, 103, 103);
-}
 
 .hidden {
     display: none;
 }
-
 
 
 .heading-1 {
@@ -98,8 +94,7 @@ html {
         border-radius: 1rem;
         position: relative;
         transition: all .5s;
-        box-shadow: .2rem .2rem 3rem rgb(141, 136, 136),
-            -.2rem -.2rem 3rem rgb(141, 136, 136);
+
 
         &:hover {
             transform: scale(1.05);
@@ -112,15 +107,15 @@ html {
         text-align: center;
         // потому что padding-top: calc(115% / 1);
         margin-top: -70%;
-        text-shadow: .2rem .2rem 2rem black,
-            -.2rem -.2rem 2rem black,
-            0rem 0rem 2rem black;
+        text-shadow: .5rem .5rem 2rem black,
+            -.5rem -.5rem 2rem black,
+            0rem 0rem 1rem black;
     }
 }
 
 // ссылки перед этими карточками
 .section_selectionCategory {
-    padding: 2rem 8rem 11rem;
+    padding: 5rem 8rem 11rem;
 
     .selectionCategory_links {
         text-align: center;
@@ -134,7 +129,7 @@ html {
         a:last-child {
             display: inline-block;
             margin-top: 1rem;
-            color: $color-red;
+            color: #fff;
             font-size: 3rem;
         }
     }
@@ -144,7 +139,7 @@ html {
 // секция топ популярных товаров
 .section_topItems {
     padding: 5rem;
-    background-color: $color-text-light;
+    // background-color: rgba();
     font-weight: 600;
 
     .heading-3 {
@@ -164,6 +159,7 @@ html {
         a img:hover {
             transform: none;
         }
+
     }
 }
 
@@ -312,8 +308,14 @@ html {
     }
 }
 
+.topItem_card {
 
-
+    .item-title,
+    .item-price,
+    .item-sizes {
+        color: $color-text !important;
+    }
+}
 
 // СТРАНИЦА ОПИСАНИЯ ТОВАРА
 .description__container {

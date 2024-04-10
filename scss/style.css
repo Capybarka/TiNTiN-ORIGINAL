@@ -154,7 +154,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #4F4B4B;
 }
@@ -169,6 +169,10 @@ html {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
+.gray_line {
+  border-bottom: 1px solid rgba(92, 92, 92, 0.85);
+}
+
 .hidden {
   display: none;
 }
@@ -176,11 +180,12 @@ html {
 .heading-1 {
   max-width: 100rem;
   margin: 0 auto;
-  font-size: 3rem;
-  line-height: 3.8rem;
+  font-size: 3.5rem;
+  line-height: 5rem;
   color: #fff;
   text-align: center;
-  text-shadow: 1rem 10rem 10rem #4F4B4B;
+  font-weight: 500;
+  text-shadow: 0rem 0rem 4rem rgb(0, 0, 0);
   animation: header-anim 1s ease-out;
 }
 
@@ -437,7 +442,7 @@ html {
 }
 .description__container .description-text,
 .description__container .description-modelInfo {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 1.8rem;
   line-height: 2;
 }

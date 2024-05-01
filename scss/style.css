@@ -79,7 +79,7 @@
   padding-bottom: 7rem;
 }
 .clients_heading {
-  margin: 0 auto 5rem auto;
+  margin-bottom: 5rem;
   text-align: center;
   font-size: 3.5rem;
   font-weight: 600;
@@ -89,7 +89,6 @@
 }
 .clients__box {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(4, minmax(10rem, 28rem));
   -moz-column-gap: 5rem;
        column-gap: 5rem;
@@ -362,7 +361,7 @@ html {
   grid-template-columns: repeat(4, minmax(10.5rem, 1fr));
   row-gap: 4.5rem;
   -moz-column-gap: 3rem;
-       column-gap: 3rem;
+  column-gap: 3rem;
 }
 
 .catalog_container .card {
@@ -462,7 +461,8 @@ html {
 
 .reservation-btn {
   display: block;
-  max-width: 35%;
+  min-width: 40%;
+  max-width: 45%;
   padding: 1.5rem 2rem;
   border-radius: 2.5rem;
   color: #000;
@@ -571,6 +571,9 @@ html {
     grid-template-columns: repeat(2, 45%);
     place-content: center;
   }
+  .reservation-btn {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 700px) {
   .catalog_container {
@@ -630,7 +633,7 @@ html {
     display: grid;
     justify-content: center;
     grid-template-columns: 60%;
-    gap: 5rem;
+    row-gap: 5rem;
   }
   .catalog_container {
     grid-template-columns: 55%;

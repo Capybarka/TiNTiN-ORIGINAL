@@ -1,10 +1,16 @@
 // появлени текста в шапке при загрузке страницы
 @keyframes header-anim {
     from {
+        -webkit-transform: translateY(-25rem);
+        -ms-transform: translateY(-25rem);
+
         transform: translateY(-25rem);
     }
 
     to {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+
         transform: translateY(0);
     }
 }
@@ -12,14 +18,23 @@
 // увеличение карточек с выбором категории на главной странице
 @keyframes card-anim {
     0% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+
         transform: scale(1);
     }
 
     50% {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+
         transform: scale(1.04);
     }
 
     100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+
         transform: scale(1)
     }
 }

@@ -36,6 +36,8 @@ html {
     font-weight: 500;
     text-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 1);
 
+    /////////........ префикс
+    -webkit-animation: header-anim 1s ease-out;
     animation: header-anim 1s ease-out;
 }
 
@@ -75,6 +77,10 @@ html {
     .header__link {
         font-size: 1.8rem;
         color: $color-text;
+
+        /////////........ префикс
+        -webkit-transition: .3s;
+        -o-transition: .3s;
         transition: .3s;
 
         &:hover {
@@ -85,6 +91,9 @@ html {
 
 // карточки с категориями одежды на страницах female и male
 .selection__box_wrapper {
+    /////////........ префикс
+    display: -ms-grid;
+
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -96,10 +105,18 @@ html {
         padding-top: calc(115% / 1); /////////////////////////////////////////////
         border-radius: 1rem;
         position: relative;
+
+        /////////........ префикс
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+
         transition: all .5s;
 
-
         &:hover {
+            /////////........ префикс
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+
             transform: scale(1.05);
         }
     }
@@ -127,6 +144,10 @@ html {
         a:first-child {
             color: $color-text-light;
             font-size: 2.5rem;
+
+            /////////........ префикс
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
             transition: all .5s;
 
             &:hover {
@@ -159,13 +180,27 @@ html {
         padding: 2rem;
         background-color: #f1eeee;
         border-radius: 2rem;
+
+        /////////........ префикс
+        -webkit-transition: -webkit-transform .6s;
+        transition: -webkit-transform .6s;
+        -o-transition: transform .6s;
         transition: transform .6s;
+        transition: transform .6s, -webkit-transform .6s;
 
         &:hover {
+            /////////........ префикс
+            -webkit-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+
             transform: scale(1.02);
         }
 
         a img:hover {
+            /////////........ префикс
+            -webkit-transform: none;
+            -ms-transform: none;
+
             transform: none;
         }
 
@@ -208,6 +243,10 @@ html {
         }
 
         a {
+            /////////........ префикс
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+
             transition: .3s;
             color: $color-text;
         }
@@ -253,10 +292,21 @@ html {
 
 // карточки товара
 .catalog_container {
+    /////////........ префикс
+    display: -ms-grid;
+
     display: grid;
     grid-auto-flow: dense;
+
+    /////////........ префикс
+    -ms-grid-columns: minmax(10.5rem, 1fr) 3rem minmax(10.5rem, 1fr) 3rem minmax(10.5rem, 1fr) 3rem minmax(10.5rem, 1fr);
+
     grid-template-columns: repeat(4, minmax(10.5rem, 1fr));
     row-gap: 4.5rem;
+
+    /////////........ префикс
+    -webkit-column-gap: 3rem;
+    -moz-column-gap: 3rem;
     column-gap: 3rem;
 }
 
@@ -268,10 +318,18 @@ html {
         width: 100%;
         margin-bottom: 1rem;
         border-radius: 1rem;
-        // box-shadow: .2rem .2rem 3rem rgb(147, 144, 144);
+
+        /////////........ префикс
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+
         transition: all .4s;
 
         &:hover {
+            /////////........ префикс
+            -webkit-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+
             transform: scale(1.03);
         }
     }
@@ -310,6 +368,10 @@ html {
         font-weight: 600;
 
         &:hover {
+            /////////........ префикс
+            -webkit-transform: translateY(.5rem);
+            -ms-transform: translateY(.5rem);
+
             transform: translateY(.5rem);
             box-shadow: .5rem .5rem 1.5rem #000,
                 -.5rem -.5rem 1.5rem #000;
@@ -378,7 +440,8 @@ html {
 // кнопка "забронировать товар" на странице каталога
 .reservation-btn {
     display: block;
-    max-width: 35%;
+    min-width: 40%;
+    max-width: 45%;
     padding: 1.5rem 2rem;
     border-radius: 2.5rem;
     color: #000;
@@ -391,6 +454,10 @@ html {
     transition: transform .6s;
 
     &:hover {
+        /////////........ префикс
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+
         transform: scale(1.03);
     }
 }
@@ -443,10 +510,16 @@ html {
     letter-spacing: .3rem;
     transition: box-shadow .5s;
     background-color: #000;
+
+    /////////........ префикс
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 
     &:hover {
-        // box-shadow: .2rem .2rem 2rem black;
+        /////////........ префикс
+        -webkit-transform: translateY(.2rem);
+        -ms-transform: translateY(.2rem);
         transform: translateY(.2rem);
     }
 }

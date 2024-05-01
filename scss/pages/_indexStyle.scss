@@ -7,34 +7,11 @@
     background: linear-gradient(rgba($color-text, .4), rgba($color-text, .4)),
         url("/images/главная/фон.jpg") center / cover no-repeat;
     min-height: 80vh;
-    // padding-top: 23.6rem;
     padding-top: 12rem;
     box-shadow: 0 .7rem 3.5rem $color-text;
 }
 
 //main
-
-// @keyframes textMoveAnim {
-//     0% {
-//         transform: translateY(.3rem);
-//     }
-
-//     25% {
-//         transform: translateY(.2rem);
-//     }
-
-//     50% {
-//         transform: translateY(0);
-//     }
-
-//     75% {
-//         transform: translateY(-.2rem);
-//     }
-
-//     100% {
-//         transform: translateY(-.3rem)
-//     }
-// }
 
 //section selection
 .selection {
@@ -49,8 +26,6 @@
         font-weight: 500;
         color: $color-text-white;
         text-shadow: .2rem .2rem 5rem rgba(212, 202, 202, 0.9);
-        // animation: textMoveAnim 4s ease-out infinite;
-        // transition: 3s;
     }
 
     &__box {
@@ -96,51 +71,13 @@
     }
 }
 
-// section clients
-
-// .clients {
-//     padding-top: 6rem;
-//     padding-bottom: 7rem;
-
-//     &_heading {
-//         margin: 0 auto 5rem auto;
-//         text-align: center;
-//         font-size: 3rem;
-//         font-weight: 600;
-//         letter-spacing: .2rem;
-//     }
-
-//     &__box {
-//         display: flex;
-//         column-gap: 5rem;
-//     }
-
-//     &_card {
-//         padding: 4rem 1.5rem 4rem 1.5rem;
-//         text-align: center;
-//         font-size: 1.6rem;
-//         background-color: #F4F4F4;
-//         box-shadow: .2rem .2rem 3rem $color-text;
-
-//         img {
-//             max-width: 10.8rem;
-//             border-radius: 50%;
-//             margin-bottom: 2.3rem;
-//         }
-//     }
-
-//     &-name {
-//         font-weight: 700;
-//         margin-bottom: 1rem;
-//     }
-// }
 
 .clients {
     padding-top: 6rem;
     padding-bottom: 7rem;
 
     &_heading {
-        margin: 0 auto 5rem auto;
+        margin-bottom: 5rem;
         text-align: center;
         font-size: 3.5rem;
         font-weight: 600;
@@ -151,7 +88,7 @@
 
     &__box {
         display: grid;
-        justify-content: center;
+        // justify-content: center;
         grid-template-columns: repeat(4, minmax(10rem, 28rem));
         column-gap: 5rem;
     }
@@ -170,7 +107,15 @@
         box-shadow: .1rem .1rem 1.5rem #9e9e9e;
         letter-spacing: .2rem;
         border-radius: 1rem;
+
+        /////////........ префикс
+        -webkit-transition: -webkit-transform .8s, -webkit-box-shadow .6s;
+        transition: -webkit-transform .8s, -webkit-box-shadow .6s;
+        -o-transition: transform .8s, box-shadow .6s;
+        transition: transform .8s, box-shadow .6s, -webkit-transform .8s, -webkit-box-shadow .6s;
+
         transition: transform .8s, box-shadow .6s;
+
         position: relative;
 
         img {

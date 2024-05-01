@@ -12,7 +12,6 @@
 }
 
 @media (max-width: 1050px) {
-
     // адаптация cекции с выбором категории товаров
     .selection__box_wrapper {
         grid-template-columns: repeat(2, minmax(20rem, 30%));
@@ -33,6 +32,10 @@
     .section_topItems .catalog_container {
         grid-template-columns: repeat(2, 45%);
         place-content: center;
+    }
+
+    .reservation-btn{
+        font-size: 1rem;
     }
 }
 
@@ -120,7 +123,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 60%;
-        gap: 5rem;
+        row-gap: 5rem;
     }
 
     // адаптация каталога

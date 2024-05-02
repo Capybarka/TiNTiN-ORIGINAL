@@ -373,8 +373,7 @@ html {
             -ms-transform: translateY(.5rem);
 
             transform: translateY(.5rem);
-            box-shadow: .5rem .5rem 1.5rem #000,
-                -.5rem -.5rem 1.5rem #000;
+            box-shadow: inset -.5rem -.5rem 1.8rem #363535;
         }
     }
 }

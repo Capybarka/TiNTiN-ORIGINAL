@@ -30,6 +30,8 @@
 
     &__box {
         width: 75%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -38,7 +40,10 @@
 
     &__card {
         padding: 3rem 5rem 4rem;
+
+        -webkit-animation: card-anim 6s ease-in-out infinite;
         animation: card-anim 6s ease-in-out infinite;
+
         text-align: center;
 
         img {
@@ -60,9 +65,13 @@
             text-transform: uppercase;
             font-weight: 700;
 
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
             transition: all .5s;
 
             &:hover {
+                -webkit-transform: translateY(.6rem);
+                -ms-transform: translateY(.6rem);
                 transform: translateY(.6rem);
                 box-shadow: .5rem .5rem 1.5rem #000,
                     -.5rem -.5rem 1.5rem #000;
@@ -87,9 +96,13 @@
     }
 
     &__box {
+        display: -ms-grid;
         display: grid;
-        // justify-content: center;
+        -ms-grid-columns: minmax(10rem, 28rem) 5rem minmax(10rem, 28rem) 5rem minmax(10rem, 28rem) 5rem minmax(10rem, 28rem);
         grid-template-columns: repeat(4, minmax(10rem, 28rem));
+        
+        -webkit-column-gap: 5rem;
+        -moz-column-gap: 5rem;
         column-gap: 5rem;
     }
 
@@ -125,6 +138,8 @@
         }
 
         &:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
             transform: scale(1.1);
             box-shadow: .5rem .5rem 2rem #302d2d,
                 -.5rem -.5rem 2rem #302d2d;

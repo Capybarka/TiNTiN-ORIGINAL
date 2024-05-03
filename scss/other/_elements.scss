@@ -30,13 +30,15 @@ html {
     max-width: 100rem;
     margin: 0 auto;
     font-size: 3.5rem;
-    line-height: 5rem;
+
     color: #fff;
     text-align: center;
     font-weight: 500;
     text-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 1);
 
-    /////////........ префикс
+    font-size: 3rem;
+    line-height: 5rem;
+
     -webkit-animation: header-anim 1s ease-out;
     animation: header-anim 1s ease-out;
 }
@@ -51,6 +53,7 @@ html {
 //шапка без ссылки "на главную"
 .logo {
     display: flex;
+    flex-wrap: wrap;
     padding: 2.5rem 0;
     align-items: center;
     justify-content: center;
@@ -60,7 +63,8 @@ html {
         margin-right: 2rem;
     }
 
-    a {
+    &-text {
+        display: block;
         font-size: 3rem;
         font-weight: 800;
         letter-spacing: .2rem;
@@ -78,7 +82,6 @@ html {
         font-size: 1.8rem;
         color: $color-text;
 
-        /////////........ префикс
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s;
@@ -91,7 +94,6 @@ html {
 
 // карточки с категориями одежды на страницах female и male
 .selection__box_wrapper {
-    /////////........ префикс
     display: -ms-grid;
 
     display: grid;
@@ -106,14 +108,12 @@ html {
         border-radius: 1rem;
         position: relative;
 
-        /////////........ префикс
         -webkit-transition: all .5s;
         -o-transition: all .5s;
 
         transition: all .5s;
 
         &:hover {
-            /////////........ префикс
             -webkit-transform: scale(1.05);
             -ms-transform: scale(1.05);
 
@@ -145,7 +145,6 @@ html {
             color: $color-text-light;
             font-size: 2.5rem;
 
-            /////////........ префикс
             -webkit-transition: all .5s;
             -o-transition: all .5s;
             transition: all .5s;
@@ -169,7 +168,6 @@ html {
 // секция топ популярных товаров
 .section_topItems {
     padding: 5rem;
-    // background-color: rgba();
     font-weight: 600;
 
     .heading-3 {
@@ -181,7 +179,6 @@ html {
         background-color: #f1eeee;
         border-radius: 2rem;
 
-        /////////........ префикс
         -webkit-transition: -webkit-transform .6s;
         transition: -webkit-transform .6s;
         -o-transition: transform .6s;
@@ -189,7 +186,6 @@ html {
         transition: transform .6s, -webkit-transform .6s;
 
         &:hover {
-            /////////........ префикс
             -webkit-transform: scale(1.02);
             -ms-transform: scale(1.02);
 
@@ -197,7 +193,6 @@ html {
         }
 
         a img:hover {
-            /////////........ префикс
             -webkit-transform: none;
             -ms-transform: none;
 
@@ -243,7 +238,6 @@ html {
         }
 
         a {
-            /////////........ префикс
             -webkit-transition: .3s;
             -o-transition: .3s;
 
@@ -273,7 +267,6 @@ html {
         ul {
             max-width: 70%;
             margin: 0 auto;
-            width: 0 auto;
             display: flex;
             justify-content: space-between;
             font-size: 1.8rem;
@@ -292,21 +285,15 @@ html {
 
 // карточки товара
 .catalog_container {
-    /////////........ префикс
     display: -ms-grid;
 
     display: grid;
     grid-auto-flow: dense;
 
-    /////////........ префикс
     -ms-grid-columns: minmax(10.5rem, 1fr) 3rem minmax(10.5rem, 1fr) 3rem minmax(10.5rem, 1fr) 3rem minmax(10.5rem, 1fr);
 
     grid-template-columns: repeat(4, minmax(10.5rem, 1fr));
     row-gap: 4.5rem;
-
-    /////////........ префикс
-    -webkit-column-gap: 3rem;
-    -moz-column-gap: 3rem;
     column-gap: 3rem;
 }
 
@@ -319,14 +306,12 @@ html {
         margin-bottom: 1rem;
         border-radius: 1rem;
 
-        /////////........ префикс
         -webkit-transition: all .4s;
         -o-transition: all .4s;
 
         transition: all .4s;
 
         &:hover {
-            /////////........ префикс
             -webkit-transform: scale(1.03);
             -ms-transform: scale(1.03);
 
@@ -368,7 +353,6 @@ html {
         font-weight: 600;
 
         &:hover {
-            /////////........ префикс
             -webkit-transform: translateY(.5rem);
             -ms-transform: translateY(.5rem);
 
@@ -453,7 +437,6 @@ html {
     transition: transform .6s;
 
     &:hover {
-        /////////........ префикс
         -webkit-transform: scale(1.03);
         -ms-transform: scale(1.03);
 
@@ -510,13 +493,11 @@ html {
     transition: box-shadow .5s;
     background-color: #000;
 
-    /////////........ префикс
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
 
     &:hover {
-        /////////........ префикс
         -webkit-transform: translateY(.2rem);
         -ms-transform: translateY(.2rem);
         transform: translateY(.2rem);

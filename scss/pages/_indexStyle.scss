@@ -6,7 +6,7 @@
 .header__image {
     background: linear-gradient(rgba($color-text, .4), rgba($color-text, .4)),
         url("/images/главная/фон.jpg") center / cover no-repeat;
-    min-height: 80vh;
+    min-height: 55vh;
     padding-top: 12rem;
     box-shadow: 0 .7rem 3.5rem $color-text;
 }
@@ -100,7 +100,7 @@
         display: grid;
         -ms-grid-columns: minmax(10rem, 28rem) 5rem minmax(10rem, 28rem) 5rem minmax(10rem, 28rem) 5rem minmax(10rem, 28rem);
         grid-template-columns: repeat(4, minmax(10rem, 28rem));
-        
+
         -webkit-column-gap: 5rem;
         -moz-column-gap: 5rem;
         column-gap: 5rem;

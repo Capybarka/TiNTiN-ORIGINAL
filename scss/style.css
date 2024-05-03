@@ -20,7 +20,7 @@
 }
 .header__image {
   background: linear-gradient(rgba(79, 75, 75, 0.4), rgba(79, 75, 75, 0.4)), url("/images/главная/фон.jpg") center/cover no-repeat;
-  min-height: 80vh;
+  min-height: 55vh;
   padding-top: 12rem;
   box-shadow: 0 0.7rem 3.5rem #4F4B4B;
 }
@@ -126,29 +126,29 @@
 }
 
 .category_female .box_wrapper-pants {
-  background: url("../../images/категории женское/брюки.jpg") center/cover no-repeat;
+  background: url("../../images/категорииЖенское/брюки.jpg") center/cover no-repeat;
 }
 .category_female .box_wrapper-tshirts {
-  background: url("../../images/категории женское/футболки.jpg") center/cover no-repeat;
+  background: url("../../images/категорииЖенское/футболки.jpg") center/cover no-repeat;
 }
 .category_female .box_wrapper-sweatshirt {
-  background: url("../../images/категории женское/толстовки.jpg") center/cover no-repeat;
+  background: url("../../images/категорииЖенское/толстовки.jpg") center/cover no-repeat;
 }
 .category_female .box_wrapper-shoes {
-  background: url("../../images/категории женское/обувь.jpg") center/cover no-repeat;
+  background: url("../../images/категорииЖенское/обувь.jpg") center/cover no-repeat;
 }
 
 .category_male .box_wrapper-pants {
-  background: url("../../images/категории мужское/брюки.jpg") center/cover no-repeat;
+  background: url("../../images/категорииМужское/брюки.jpg") center/cover no-repeat;
 }
 .category_male .box_wrapper-tshirts {
-  background: url("../../images/категории мужское/футболки.jpg") center/cover no-repeat;
+  background: url("../../images/категорииМужское/футболки.jpg") center/cover no-repeat;
 }
 .category_male .box_wrapper-sweatshirt {
-  background: url("../../images/категории мужское/толстовки.jpg") center/cover no-repeat;
+  background: url("../../images/категорииМужское/толстовки.jpg") center/cover no-repeat;
 }
 .category_male .box_wrapper-shoes {
-  background: url("../../images/категории мужское/обувь.jpg") center/cover no-repeat;
+  background: url("../../images/категорииМужское/обувь.jpg") center/cover no-repeat;
 }
 
 html {
@@ -180,11 +180,12 @@ html {
   max-width: 100rem;
   margin: 0 auto;
   font-size: 3.5rem;
-  line-height: 5rem;
   color: #fff;
   text-align: center;
   font-weight: 500;
   text-shadow: 0rem 0rem 4rem rgb(0, 0, 0);
+  font-size: 3rem;
+  line-height: 5rem;
   animation: header-anim 1s ease-out;
 }
 
@@ -197,6 +198,7 @@ html {
 
 .logo {
   display: flex;
+  flex-wrap: wrap;
   padding: 2.5rem 0;
   align-items: center;
   justify-content: center;
@@ -205,7 +207,8 @@ html {
   display: block;
   margin-right: 2rem;
 }
-.logo a {
+.logo-text {
+  display: block;
   font-size: 3rem;
   font-weight: 800;
   letter-spacing: 0.2rem;
@@ -343,7 +346,6 @@ html {
 .section_catalog .category_description ul {
   max-width: 70%;
   margin: 0 auto;
-  width: 0 auto;
   display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
@@ -361,7 +363,7 @@ html {
   grid-template-columns: repeat(4, minmax(10.5rem, 1fr));
   row-gap: 4.5rem;
   -moz-column-gap: 3rem;
-  column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .catalog_container .card {
@@ -561,6 +563,12 @@ html {
   }
 }
 @media (max-width: 850px) {
+  .logo {
+    flex-direction: column;
+  }
+  .logo-img img {
+    max-width: 10rem;
+  }
   .clients__box {
     display: grid;
     justify-content: center;

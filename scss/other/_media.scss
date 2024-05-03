@@ -12,6 +12,7 @@
 }
 
 @media (max-width: 1050px) {
+
     // адаптация cекции с выбором категории товаров
     .selection__box_wrapper {
         grid-template-columns: repeat(2, minmax(20rem, 30%));
@@ -19,6 +20,13 @@
 }
 
 @media (max-width: 850px) {
+    .logo {
+        flex-direction: column;
+
+        &-img img {
+            max-width: 10rem;
+        }
+    }
 
     //секция с отзывами клиентов
     .clients__box {
@@ -34,7 +42,7 @@
         place-content: center;
     }
 
-    .reservation-btn{
+    .reservation-btn {
         font-size: 1rem;
     }
 }

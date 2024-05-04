@@ -140,6 +140,7 @@
 
 .category_male .box_wrapper-pants {
   background: url("../../images/категорииМужское/брюки.jpg") center/cover no-repeat;
+  font-size: 12rem;
 }
 .category_male .box_wrapper-tshirts {
   background: url("../../images/категорииМужское/футболки.jpg") center/cover no-repeat;
@@ -635,6 +636,9 @@ html {
   .selection__box_wrapper {
     grid-template-columns: 50%;
   }
+  .selection__box_wrapper a p {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 350px) {
   .clients__box {
@@ -646,6 +650,9 @@ html {
   .catalog_container {
     grid-template-columns: 55%;
     justify-content: center;
+  }
+  .selection__box_wrapper a p {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 300px) {

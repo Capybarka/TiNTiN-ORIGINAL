@@ -122,6 +122,10 @@
     .selection__box_wrapper {
         grid-template-columns: 50%;
     }
+
+    .selection__box_wrapper a p {
+        font-size: 3rem;
+    }
 }
 
 @media(max-width: 350px) {
@@ -138,6 +142,10 @@
     .catalog_container {
         grid-template-columns: 55%;
         justify-content: center;
+    }
+
+    .selection__box_wrapper a p {
+        font-size: 2.5rem;
     }
 }
 

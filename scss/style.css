@@ -20,8 +20,8 @@
 }
 .header__image {
   background: linear-gradient(rgba(79, 75, 75, 0.4), rgba(79, 75, 75, 0.4)), url("/images/главная/фон.jpg") center/cover no-repeat;
-  padding-top: 25rem;
-  padding-bottom: 25rem;
+  padding-top: 23rem;
+  padding-bottom: 32rem;
   box-shadow: 0 0.7rem 3.5rem #4F4B4B;
 }
 
@@ -177,6 +177,10 @@ html {
   display: none;
 }
 
+.focus {
+  box-shadow: 0.5rem 0.5rem 1.5rem rgb(144, 138, 138), -0.5rem -0.5rem 1.5rem rgb(144, 138, 138);
+}
+
 .heading-1 {
   max-width: 100rem;
   margin: 0 auto;
@@ -234,12 +238,6 @@ html {
   transition: all 0.45s ease-out;
   color: #4F4B4B;
 }
-.logo .header__nav_list .header__nav_link .nav-link:hover {
-  background-color: #4F4B4B;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  color: white;
-}
 
 .selection__box_wrapper {
   display: grid;
@@ -250,6 +248,7 @@ html {
 }
 .selection__box_wrapper a {
   display: block;
+  opacity: 0;
   padding-top: 115%;
   border-radius: 1rem;
   position: relative;
@@ -267,26 +266,7 @@ html {
 }
 
 .section_selectionCategory {
-  padding: 5rem 8rem 8rem;
-}
-.section_selectionCategory .selectionCategory_links {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.section_selectionCategory .selectionCategory_links a:first-child {
-  color: #999999;
-  font-size: 2.5rem;
-  transition: all 0.5s;
-}
-.section_selectionCategory .selectionCategory_links a:first-child:hover {
-  color: #d1cbcb;
-}
-.section_selectionCategory .selectionCategory_links a:last-child {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  color: #fff;
-  font-size: 3rem;
+  padding: 10rem 0 10rem 0;
 }
 
 .section_topItems {
@@ -575,12 +555,6 @@ html {
   }
 }
 @media (max-width: 850px) {
-  .logo {
-    flex-direction: column;
-  }
-  .logo-img img {
-    max-width: 10rem;
-  }
   .clients__box {
     display: grid;
     justify-content: center;
@@ -617,6 +591,10 @@ html {
   .footer_nav {
     flex-direction: column;
     align-content: center;
+  }
+  .logo {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 @media (max-width: 550px) {

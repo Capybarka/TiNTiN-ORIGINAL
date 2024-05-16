@@ -26,6 +26,12 @@ html {
     display: none;
 }
 
+// для формы
+.focus {
+    box-shadow: .5rem .5rem 1.5rem rgb(144, 138, 138),
+        -.5rem -.5rem 1.5rem rgb(144, 138, 138);
+}
+
 .heading-1 {
     max-width: 100rem;
     margin: 0 auto;
@@ -94,12 +100,12 @@ html {
                 transition: all .45s ease-out;
                 color: $color-text;
 
-                &:hover {
-                    background-color: $color-text;
-                    border-radius: 1rem;
-                    padding: .5rem;
-                    color: white;
-                }
+                // &:hover {
+                //     background-color: $color-text;
+                //     border-radius: 1rem;
+                //     padding: .5rem;
+                //     color: white;
+                // }
             }
         }
     }
@@ -109,6 +115,8 @@ html {
 .selection__box_wrapper {
     display: -ms-grid;
 
+
+
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -117,6 +125,8 @@ html {
 
     a {
         display: block;
+        opacity: 0;
+
         padding-top: calc(115% / 1); /////////////////////////////////////////////
         border-radius: 1rem;
         position: relative;
@@ -148,33 +158,7 @@ html {
 
 // ссылки перед этими карточками
 .section_selectionCategory {
-    padding: 5rem 8rem 8rem;
-
-    .selectionCategory_links {
-        text-align: center;
-        margin-bottom: 3rem;
-
-        a:first-child {
-            color: $color-text-light;
-            font-size: 2.5rem;
-
-            -webkit-transition: all .5s;
-            -o-transition: all .5s;
-            transition: all .5s;
-
-            &:hover {
-                color: #d1cbcb;
-            }
-        }
-
-        a:last-child {
-            display: inline-block;
-            margin-top: 1rem;
-            margin-bottom: 3rem;
-            color: #fff;
-            font-size: 3rem;
-        }
-    }
+    padding: 10rem 0 10rem 0;
 }
 
 

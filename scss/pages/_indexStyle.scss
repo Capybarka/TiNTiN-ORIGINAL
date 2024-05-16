@@ -8,8 +8,8 @@
             rgba($color-text, .4)),
         url("/images/главная/фон.jpg") center / cover no-repeat;
 
-    padding-top: 25rem;
-    padding-bottom: 25rem;
+    padding-top: 23rem;
+    padding-bottom: 32rem;
     box-shadow: 0 .7rem 3.5rem $color-text;
 }
 
@@ -17,6 +17,7 @@
 
 //section selection
 .selection {
+    
     padding: 7rem 0;
 
     .heading-2 {

@@ -4,10 +4,12 @@
 
 // header
 .header__image {
-    background: linear-gradient(rgba($color-text, .4), rgba($color-text, .4)),
+    background: linear-gradient(rgba($color-text, .4),
+            rgba($color-text, .4)),
         url("/images/главная/фон.jpg") center / cover no-repeat;
-    min-height: 55vh;
-    padding-top: 12rem;
+
+    padding-top: 25rem;
+    padding-bottom: 25rem;
     box-shadow: 0 .7rem 3.5rem $color-text;
 }
 

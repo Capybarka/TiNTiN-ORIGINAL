@@ -50,17 +50,26 @@ html {
     text-align: center;
 }
 
-//шапка без ссылки "на главную"
+//шапка для главной
 .logo {
     display: flex;
     flex-wrap: wrap;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
 
     &-img {
         display: block;
         margin-right: 2rem;
+
+        img {
+            height: 5.5rem;
+        }
     }
 
     &-text {
@@ -70,24 +79,28 @@ html {
         letter-spacing: .2rem;
         color: $color-logo;
     }
-}
 
-//шапка с ссылкой "на главную"
-.logo__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // навигация 
+    .header__nav_list {
+        display: flex;
+        gap: 2.5rem;
 
-    .header__link {
-        font-size: 1.8rem;
-        color: $color-text;
+        .header__nav_link {
+            font-size: 1.6rem;
+            font-weight: 500;
 
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
 
-        &:hover {
-            text-shadow: .3rem .3rem 1rem $color-text-light;
+            .nav-link {
+                transition: all .45s ease-out;
+                color: $color-text;
+
+                &:hover {
+                    background-color: $color-text;
+                    border-radius: 1rem;
+                    padding: .5rem;
+                    color: white;
+                }
+            }
         }
     }
 }
@@ -121,7 +134,7 @@ html {
         }
     }
 
-    a p { ///////////////////////////////////////////////////////////////
+    a p {
         color: white;
         font-size: 4.2rem;
         text-align: center;

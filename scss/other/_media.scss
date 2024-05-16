@@ -17,9 +17,17 @@
     .selection__box_wrapper {
         grid-template-columns: repeat(2, minmax(20rem, 30%));
     }
+
+    // .header__image {
+    //     min-height: 60vh;
+    // }
 }
 
 @media (max-width: 850px) {
+    // .header__image {
+    //     min-height: 50vh;
+    // }
+
     .logo {
         flex-direction: column;
 
@@ -112,10 +120,14 @@
         font-size: 35%;
     }
 
+    // .header__image {
+    //     min-height: 45vh;
+    // }
+
     // уменьшение высоты картинки на главной странице
-    .header__image {
-        min-height: 45vh;
-    }
+    // .header__image {
+    //     min-height: 45vh;
+    // }
 
 
     // адаптация cекции с выбором категории товаров
@@ -157,7 +169,7 @@
     }
 
     // уменьшение высоты картинки на главной странице
-    .header__image {
-        min-height: 20vh;
-    }
+    // .header__image {
+    //     min-height: 20vh;
+    // }
 }

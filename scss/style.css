@@ -20,8 +20,8 @@
 }
 .header__image {
   background: linear-gradient(rgba(79, 75, 75, 0.4), rgba(79, 75, 75, 0.4)), url("/images/главная/фон.jpg") center/cover no-repeat;
-  min-height: 55vh;
-  padding-top: 12rem;
+  padding-top: 25rem;
+  padding-bottom: 25rem;
   box-shadow: 0 0.7rem 3.5rem #4F4B4B;
 }
 
@@ -200,13 +200,20 @@ html {
 .logo {
   display: flex;
   flex-wrap: wrap;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.logo .logo-container {
+  display: flex;
+  align-items: center;
 }
 .logo-img {
   display: block;
   margin-right: 2rem;
+}
+.logo-img img {
+  height: 5.5rem;
 }
 .logo-text {
   display: block;
@@ -215,19 +222,23 @@ html {
   letter-spacing: 0.2rem;
   color: #454545;
 }
-
-.logo__wrapper {
+.logo .header__nav_list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 2.5rem;
 }
-.logo__wrapper .header__link {
-  font-size: 1.8rem;
+.logo .header__nav_list .header__nav_link {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.logo .header__nav_list .header__nav_link .nav-link {
+  transition: all 0.45s ease-out;
   color: #4F4B4B;
-  transition: 0.3s;
 }
-.logo__wrapper .header__link:hover {
-  text-shadow: 0.3rem 0.3rem 1rem #999999;
+.logo .header__nav_list .header__nav_link .nav-link:hover {
+  background-color: #4F4B4B;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: white;
 }
 
 .selection__box_wrapper {
@@ -630,9 +641,6 @@ html {
   html {
     font-size: 35%;
   }
-  .header__image {
-    min-height: 45vh;
-  }
   .selection__box_wrapper {
     grid-template-columns: 50%;
   }
@@ -658,8 +666,5 @@ html {
 @media (max-width: 300px) {
   html {
     font-size: 20%;
-  }
-  .header__image {
-    min-height: 20vh;
   }
 }/*# sourceMappingURL=style.css.map */

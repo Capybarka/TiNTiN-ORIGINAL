@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // эффект при наведении на ссылки в навигации
     $('.nav-link').on('mouseenter', function () {
         $(this).css({

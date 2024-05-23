@@ -17,7 +17,7 @@
 
 //section selection
 .selection {
-    
+
     padding: 7rem 0;
 
     .heading-2 {
@@ -43,10 +43,8 @@
 
     &__card {
         padding: 3rem 5rem 4rem;
-
         -webkit-animation: card-anim 6s ease-in-out infinite;
         animation: card-anim 6s ease-in-out infinite;
-
         text-align: center;
 
         img {
@@ -124,13 +122,12 @@
         letter-spacing: .2rem;
         border-radius: 1rem;
 
-        /////////........ префикс
+        transition: transform .8s, box-shadow .6s;
+
         -webkit-transition: -webkit-transform .8s, -webkit-box-shadow .6s;
         transition: -webkit-transform .8s, -webkit-box-shadow .6s;
         -o-transition: transform .8s, box-shadow .6s;
         transition: transform .8s, box-shadow .6s, -webkit-transform .8s, -webkit-box-shadow .6s;
-
-        transition: transform .8s, box-shadow .6s;
 
         position: relative;
 

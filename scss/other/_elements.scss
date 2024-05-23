@@ -99,13 +99,6 @@ html {
             .nav-link {
                 transition: all .45s ease-out;
                 color: $color-text;
-
-                // &:hover {
-                //     background-color: $color-text;
-                //     border-radius: 1rem;
-                //     padding: .5rem;
-                //     color: white;
-                // }
             }
         }
     }
@@ -114,8 +107,6 @@ html {
 // карточки с категориями одежды на страницах female и male
 .selection__box_wrapper {
     display: -ms-grid;
-
-
 
     display: grid;
     align-items: center;
@@ -127,7 +118,7 @@ html {
         display: block;
         opacity: 0;
 
-        padding-top: calc(115% / 1); /////////////////////////////////////////////
+        padding-top: calc(115%);
         border-radius: 1rem;
         position: relative;
 
